@@ -1,0 +1,160 @@
+<html><head><base href="https://fiscalbot.br/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FiscalBot - Obrigações Fiscais no Brasil</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  h1, h2 {
+    color: #2c3e50;
+  }
+  .regime {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .obrigacao {
+    margin-bottom: 10px;
+  }
+  .obrigacao a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  .obrigacao a:hover {
+    text-decoration: underline;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #3498db;
+    cursor: help;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+  <h1>FiscalBot - Obrigações Fiscais no Brasil</h1>
+  
+  <div class="regime">
+    <h2>Simples Nacional</h2>
+    <div class="obrigacao">
+      <a href="simples-nacional/das">DAS (Documento de Arrecadação do Simples Nacional)</a>
+      <span class="tooltip">❔<span class="tooltiptext">Pagamento mensal unificado de impostos</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="simples-nacional/defis">DEFIS (Declaração de Informações Socioeconômicas e Fiscais)</a>
+      <span class="tooltip">❔<span class="tooltiptext">Declaração anual de informações</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="simples-nacional/pgdas-d">PGDAS-D (Programa Gerador do Documento de Arrecadação do Simples Nacional)</a>
+      <span class="tooltip">❔<span class="tooltiptext">Declaração mensal de faturamento</span></span>
+    </div>
+  </div>
+
+  <div class="regime">
+    <h2>Lucro Presumido</h2>
+    <div class="obrigacao">
+      <a href="lucro-presumido/darf-pis-cofins">DARF PIS/COFINS</a>
+      <span class="tooltip">❔<span class="tooltiptext">Pagamento mensal de PIS e COFINS</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="lucro-presumido/darf-irpj-csll">DARF IRPJ/CSLL</a>
+      <span class="tooltip">❔<span class="tooltiptext">Pagamento trimestral de IRPJ e CSLL</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="lucro-presumido/efd-contribuicoes">EFD-Contribuições</a>
+      <span class="tooltip">❔<span class="tooltiptext">Escrituração Fiscal Digital de PIS/COFINS</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="lucro-presumido/ecf">ECF (Escrituração Contábil Fiscal)</a>
+      <span class="tooltip">❔<span class="tooltiptext">Declaração anual de informações econômico-fiscais</span></span>
+    </div>
+  </div>
+
+  <div class="regime">
+    <h2>Lucro Real</h2>
+    <div class="obrigacao">
+      <a href="lucro-real/darf-pis-cofins">DARF PIS/COFINS</a>
+      <span class="tooltip">❔<span class="tooltiptext">Pagamento mensal de PIS e COFINS</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="lucro-real/darf-irpj-csll">DARF IRPJ/CSLL</a>
+      <span class="tooltip">❔<span class="tooltiptext">Pagamento mensal por estimativa ou trimestral de IRPJ e CSLL</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="lucro-real/efd-contribuicoes">EFD-Contribuições</a>
+      <span class="tooltip">❔<span class="tooltiptext">Escrituração Fiscal Digital de PIS/COFINS</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="lucro-real/ecf">ECF (Escrituração Contábil Fiscal)</a>
+      <span class="tooltip">❔<span class="tooltiptext">Declaração anual de informações econômico-fiscais</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="lucro-real/ecd">ECD (Escrituração Contábil Digital)</a>
+      <span class="tooltip">❔<span class="tooltiptext">Livros contábeis em formato digital</span></span>
+    </div>
+  </div>
+
+  <div class="regime">
+    <h2>Obrigações Acessórias Comuns</h2>
+    <div class="obrigacao">
+      <a href="obrigacoes-comuns/dctf">DCTF (Declaração de Débitos e Créditos Tributários Federais)</a>
+      <span class="tooltip">❔<span class="tooltiptext">Declaração mensal de débitos e créditos tributários</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="obrigacoes-comuns/gfip">GFIP (Guia de Recolhimento do FGTS e Informações à Previdência Social)</a>
+      <span class="tooltip">❔<span class="tooltiptext">Informações sobre FGTS e Previdência Social</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="obrigacoes-comuns/esocial">eSocial</a>
+      <span class="tooltip">❔<span class="tooltiptext">Sistema de escrituração digital das obrigações fiscais, previdenciárias e trabalhistas</span></span>
+    </div>
+    <div class="obrigacao">
+      <a href="obrigacoes-comuns/efd-reinf">EFD-Reinf (Escrituração Fiscal Digital de Retenções e Outras Informações Fiscais)</a>
+      <span class="tooltip">❔<span class="tooltiptext">Escrituração de rendimentos pagos e retenções de Imposto de Renda, Contribuição Social do contribuinte</span></span>
+    </div>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  const obrigacoes = document.querySelectorAll('.obrigacao a');
+  obrigacoes.forEach(obrigacao => {
+    obrigacao.addEventListener('click', function(e) {
+      e.preventDefault();
+      const regime = this.closest('.regime').querySelector('h2').textContent;
+      const obrigacao = this.textContent;
+      alert(`Você selecionou a obrigação "${obrigacao}" do regime "${regime}". Em um sistema real, você seria redirecionado para a página correspondente para cumprir esta obrigação fiscal.`);
+    });
+  });
+});
+</script>
+
+</body></html>
